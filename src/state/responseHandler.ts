@@ -60,9 +60,6 @@ export const errorResponseHandler = (error: any) => {
     if (exitCodes.has(error.code)) {
       if(authfail === error.code){
         AuthCookie.cleanup()
-      }else if(NeedVerified === error.code){
-        /** twa 验证未完成 */
-        AuthCookie.set(error.code)
       }
       return Promise.reject(error)
       // return Promise.reject(normalizedError)

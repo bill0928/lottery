@@ -20,7 +20,7 @@ export const postFormData = async <Params>({
 };
 
 const createAxiosInstance = () => {
-  if (!config.api) throw new Error("API URL is not defined");
+  // if (!config.api) throw new Error("API URL is not defined");
   if (axioRequest === undefined) {
     const instance = axios.create({
       baseURL: config.api,

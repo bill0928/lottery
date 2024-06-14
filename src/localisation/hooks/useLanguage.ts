@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react'
-import { LanguageContext } from 'localisation/contexts/LanguageContext'
+import { LanguageContext } from '@/localisation/contexts/LanguageContext'
 import i18n from '../i18n'
 
 export type I18n = {

@@ -61,8 +61,8 @@ const AccordionWrapper = styled(Box)(({ theme }) => ({
 
 
 type Props = {
-    // value: number;
-    // onChange: (value: number) => void;
+    value?: number;
+    onChange?: (value: number) => void;
     onBackDropEvent: (value: boolean) => void;
     backDrop: boolean;
 }
@@ -108,14 +108,14 @@ const ModeSelect = (prop: Props) => {
                 alignItems={'center'}
                 sx={{zIndex: 1}}
             >
-                <TxtWrapper variant="h4" noWrap >标准玩法</TxtWrapper>
+                <TxtWrapper theme={theme} variant="h4" noWrap >标准玩法</TxtWrapper>
                 <Box ><ArrowDown /></Box>
             </Wrapper>
             <AccordionWrapper onClick={handleClose2}>
                 <Accordion expanded={expanded} square sx={{ backgroundColor: '#000' }}>
                     <AccordionSummary sx={{ display: 'none' }} />
                     <AccordionDetails >
-                        <PopoverContentWrapper >信用玩法</PopoverContentWrapper>
+                        <PopoverContentWrapper theme={theme}>信用玩法</PopoverContentWrapper>
                     </AccordionDetails>
                 </Accordion>
             </AccordionWrapper>
@@ -130,7 +130,7 @@ const ModeSelect = (prop: Props) => {
             justifyContent={'space-between'}
             alignItems={'center'}
         >
-            <TxtWrapper variant="h4" noWrap >标准玩法</TxtWrapper>
+            <TxtWrapper variant="h4" noWrap theme={theme}>标准玩法</TxtWrapper>
             <Box ><ArrowDown /></Box>
         </Wrapper>
         <Popover
@@ -143,7 +143,7 @@ const ModeSelect = (prop: Props) => {
                 horizontal: 'left',
             }}
         >
-            <PopoverContentWrapper onClick={handleClose}>信用玩法</PopoverContentWrapper>
+            <PopoverContentWrapper onClick={handleClose} theme={theme}>信用玩法</PopoverContentWrapper>
         </Popover></>
     );
 };

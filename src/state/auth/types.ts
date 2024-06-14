@@ -17,7 +17,8 @@ export type RegisterFormParams = {
 
 export type AuthInfo = {
   id: number;
-  token: string
+  token: string;
+  username: string;
 };
 
 export type UserInfo = Partial<AuthInfo>;

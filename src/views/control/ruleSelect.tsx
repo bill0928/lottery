@@ -110,7 +110,7 @@ const RuleSelect = (prop: Props) => {
                             pt={1}
                             key={item}>
                             <Grid item xs={2.5}>
-                                <StageTtileWrapper pt={'5px'}>{item}:</StageTtileWrapper>
+                                <StageTtileWrapper theme={theme} pt={'5px'}>{item}:</StageTtileWrapper>
                             </Grid>
                             <Grid item xs={9.5} container gap={'1vw'}>
                                 {renderItemsMo(parseStageNums(index, stage, childs))}
