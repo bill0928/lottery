@@ -1,0 +1,14 @@
+export const GAME_ID = {
+    SSC_60: 5011,
+    SSC_300: 5012,
+    SSC_600: 5013,
+    K3_60: 5021,
+    K3_300: 5022,
+    K3_600: 5023,
+    WINGO_60: 5041,
+    WINGO_300: 5042,
+    WINGO_600: 5043,
+}
+export const SSC = [GAME_ID.SSC_60, GAME_ID.SSC_300, GAME_ID.SSC_600]
+export const K3 = [GAME_ID.K3_60, GAME_ID.K3_300, GAME_ID.K3_600]
+export const WINGO = [GAME_ID.WINGO_60, GAME_ID.WINGO_300, GAME_ID.WINGO_600]
