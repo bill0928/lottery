@@ -15,8 +15,12 @@ const LanguageContext = createContext<{
   selectedLanguage: DEFAULT.code,
   setLanguage: () => null
 })
+type Prop ={
+  children: React.ReactNode
 
-const LanguageContextProvider: React.FC = ({ children }) => {
+}
+
+const LanguageContextProvider: React.FC<Prop> = ({ children }) => {
   const [language, setLanguage] = useState<string>(DEFAULT.code)
 
   const switchLanguage = useCallback(
