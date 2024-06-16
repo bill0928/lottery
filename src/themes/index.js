@@ -36,7 +36,10 @@ const customTheme = () => {
         // minHeight: '48px',
         padding: '16px',
         '@media (min-width: 600px)': {
-          // minHeight: '48px'
+          height: '60px'
+        },
+        '@media (max-width: 600px)': {
+          height: '48px'
         }
       }
     },

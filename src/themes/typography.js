@@ -87,8 +87,8 @@ export default function themeTypography(theme) {
     },
     mainContent: {
       width: "100%",
-      minHeight: "calc(100vh - 60px)",
-      flexGrow: 1,
+      // minHeight: "calc(100vh - 60px)",
+      // flexGrow: 1,
     },
     menuCaption: {
       fontSize: "0.875rem",

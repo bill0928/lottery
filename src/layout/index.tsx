@@ -11,6 +11,7 @@ import app from '@/state/app/store'
 import { PropsWithChildren } from 'react';
 import { useSnapshot } from 'valtio';
 import BackGroundWrapper from '@/ui-component/mainBackground';
+import { over } from 'lodash';
 
 type Props = {
   typography: {
@@ -45,7 +46,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' && pr
     // marginLeft: '20px',
     // width: `calc(100% - ${drawerWidth}px)`,
     // padding: '16px'
-    marginTop: '60px'
+    marginTop: '56px'
   },
   [theme.breakpoints.down('sm')]: {
     // marginLeft: '10px',
@@ -84,7 +85,6 @@ const MainLayout:React.FC<PropsWithChildren>  = ({ children }) => {
         </Toolbar>
       </AppBar>
 
-      {/* <Sidebar drawerOpen={!matchDownMd ? leftDrawerOpened : !leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} window={undefined} /> */}
       <BackGroundWrapper />
       <Main theme={theme} >
       {children}

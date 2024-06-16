@@ -34,7 +34,7 @@ const BetInput = () => {
                 直接投注
             </Button></Grid>
             <Grid item xs={6}><Button variant="contained" color="bet2" sx={{ width: '100%' }}>
-                添加号码栏
+                号码栏
             </Button>
             </Grid>
             {isMobile && <Button variant="contained" color="bet2" sx={{ padding: '10px', minWidth: 'unset' }}>

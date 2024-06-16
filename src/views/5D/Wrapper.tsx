@@ -78,7 +78,7 @@ export const MobileBottomWrapper = styled(Box)(({ theme }: ThemePro) => ({
         backdropFilter,
         width: '100%',
     },
-    height: 182,
+    height: 186,
     color: 'white'
 }));
 export const BetInputWrapper = styled(Box)(({ theme }: ThemePro) => ({
@@ -88,7 +88,7 @@ export const BetInputWrapper = styled(Box)(({ theme }: ThemePro) => ({
         boxShadow: theme.palette.common.shadow,
         backdropFilter,
         width: 390,
-        height: 184
+        // height: 184
     },
     [theme.breakpoints.down("md")]: {
 
@@ -102,7 +102,7 @@ export const HaoMaLanWrapper = styled(Box)(({ theme }: ThemePro) => ({
         boxShadow: theme.palette.common.shadow,
         backdropFilter,
         width: 742,
-        height: 184
+        // height: 184
     },
     [theme.breakpoints.down("md")]: {
 

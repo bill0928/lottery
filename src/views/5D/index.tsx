@@ -45,7 +45,7 @@ const Index = (prop: Prop) => {
     <>
       <Wrapper>
         <Header />
-        <Grid container gap={'4px'} mt={1.3}>
+        <Grid container gap={'4px'} mt={isMobile ? 1:1.3}>
           <Box width={isMobile ? 1 : undefined} sx={{ position: 'relative' }} >
             <GamePlayType game={GAME_ID.SSC_60} rule={rule} onChange={set} />
             <MainWrapper theme={theme} container alignItems={'center'} justifyContent={'center'}>

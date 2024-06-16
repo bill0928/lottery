@@ -165,8 +165,8 @@ export default function componentStyleOverrides(theme) {
         root: {
           paddingTop: 0,
           paddingBottom: 0,
-          height: 60,
           backgroundColor: "#060317",
+          
         },
       },
     },

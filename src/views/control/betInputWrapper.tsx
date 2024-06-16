@@ -9,7 +9,8 @@ export const Wrapper = styled(Box)(({ theme }) => ({
         padding: '16px 20px',
     },
     [theme.breakpoints.down('md')]: {
-        padding: '16px 23px',
+        padding: '12px 23px',
+        paddingBottom: 16,
        
     },
    
