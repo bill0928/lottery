@@ -9,6 +9,7 @@ import componentStyleOverrides from './compStyleOverride';
 import themePalette from './palette';
 import themeTypography from './typography';
 
+
 const customTheme = () => {
   const color = colors;
 
@@ -24,6 +25,7 @@ const customTheme = () => {
     menuSelected: color.secondaryDark,
     menuSelectedBack: color.secondaryLight,
     divider: color.grey200,
+  
   };
 
   const themeOptions = {

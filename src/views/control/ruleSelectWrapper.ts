@@ -61,8 +61,8 @@ export const OptionsContentWrapper = styled(Typography, { shouldForwardProp })(
       ["&:hover"]: isSelect
         ? {}
         : {
-            borderColor: "#FFC555",
-            color: "#FFC555",
+            borderColor: theme.palette.secondary.main,
+            color: theme.palette.secondary.main,
           },
       width: 150,
     },
@@ -75,7 +75,7 @@ export const OptionsContentWrapper = styled(Typography, { shouldForwardProp })(
     border: "1px solid",
     textAlign: "center",
     fontWeight: 400,
-    background: isSelect ? "#FFC555" : "transparent",
+    background: isSelect ? theme.palette.secondary.main : "transparent",
     boxShadow: isSelect
       ? "0px 2px 2px 0px rgba(0, 0, 0, 0.30) inset"
       : undefined,
@@ -86,7 +86,7 @@ export const OptionsContentWrapper = styled(Typography, { shouldForwardProp })(
 export const AccordionWrapper = styled(Box)(({ theme }) => ({
   position: "absolute",
   width: "100vw",
-  top: 34,
+  top: 36,
   left: -6,
   zIndex: 1,
 }));

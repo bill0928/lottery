@@ -69,6 +69,15 @@ export default function themePalette(theme) {
     background: {
       paper: theme.paper,
       default: theme.backgroundDefault
-    }
+    },
+    bet:{
+      main: theme.colors.betMain
+    },
+    bet2:{
+      main: theme.colors.betSecondary
+    },
+    bet3:{
+      main: theme.colors.betThird
+    },
   };
 }

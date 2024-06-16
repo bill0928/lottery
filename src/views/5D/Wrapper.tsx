@@ -25,8 +25,10 @@ export const MainWrapper = styled(Grid)(({ theme }: ThemePro) => ({
         borderRadius: '0px 10px 10px 10px',
     },
     [theme.breakpoints.down("md")]: {
-        height: '50vh',
+        height: '55vh',
+        position: 'absolute',
     },
+    overflowY: 'auto',
     color: 'white'
 }));
 export const RightWrapper = styled(Grid)(({ theme }) => ({
@@ -76,16 +78,36 @@ export const MobileBottomWrapper = styled(Box)(({ theme }: ThemePro) => ({
         backdropFilter,
         width: '100%',
     },
-    height: '20vh',
+    height: 182,
     color: 'white'
 }));
-export const BetInputWrapper = styled(Box)(({ theme }) => ({
+export const BetInputWrapper = styled(Box)(({ theme }: ThemePro) => ({
     background: theme.palette.common.black,
     [theme.breakpoints.up("md")]: {
+        borderRadius: 10,
+        boxShadow: theme.palette.common.shadow,
+        backdropFilter,
+        width: 390,
+        height: 184
     },
     [theme.breakpoints.down("md")]: {
 
     },
+    color: 'white'
+}));
+export const HaoMaLanWrapper = styled(Box)(({ theme }: ThemePro) => ({
+    background: theme.palette.common.black,
+    [theme.breakpoints.up("md")]: {
+        borderRadius: 10,
+        boxShadow: theme.palette.common.shadow,
+        backdropFilter,
+        width: 742,
+        height: 184
+    },
+    [theme.breakpoints.down("md")]: {
+
+    },
+    color: 'white'
 }));
 
 export default Wrapper;

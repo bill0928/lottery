@@ -25,7 +25,7 @@ const Login = () => {
           {isLegal ? null : <Guest />}
         </Grid>
         {isLegal ? <Grid container alignItems="center" justifyContent={'center'}
-          sx={{ background: 'rgba(0,0,0,0.7)', width: 100 }}>
+          sx={{ background: 'rgba(0,0,0,0.7)', width: 150 }}>
           <Grid item >
             <Typography
               sx={{
@@ -34,8 +34,8 @@ const Login = () => {
                 fontFamily: theme.typography.lobbyLinkFontFamily,
               }}
               component={Link}
-              href="/5D" underline="hover">
-              5D
+              href="/5D/5011" underline="hover">
+              5D- 5011
             </Typography>
             {/* <Typography variant="mediumAvatar" component={Link} href="/5d" underline="hover">
             Futura

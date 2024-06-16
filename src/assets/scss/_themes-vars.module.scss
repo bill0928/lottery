@@ -76,6 +76,9 @@ $darkTextTitle: #d7dcec;
 $darkTextPrimary: #bdc8f0;
 $darkTextSecondary: #8492c4;
 
+$betMain: #10E2F0;
+$betSecondary: #10F0AD;
+$betThird: #D2D2D2;
 // ==============================|| JAVASCRIPT ||============================== //
 
 :export {
@@ -156,4 +159,8 @@ $darkTextSecondary: #8492c4;
   darkSecondaryDark: $darkSecondaryDark;
   darkSecondary200: $darkSecondary200;
   darkSecondary800: $darkSecondary800;
+
+  betMain: $betMain;
+  betSecondary: $betSecondary;
+  betThird: $betThird;
 }

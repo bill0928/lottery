@@ -52,9 +52,8 @@ export default function themeTypography(theme) {
       fontWeight: 400,
     },
     body1: {
-      fontSize: "0.875rem",
-      fontWeight: 400,
-      lineHeight: "1.334em",
+      fontWeight: 500,
+      fontFamily: "Futura",
     },
     body2: {
       letterSpacing: "0em",
